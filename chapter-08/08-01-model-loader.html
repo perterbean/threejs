@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ví dụ Model Loader</title>
+    <link rel="icon" href="../images/logo.svg" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+        #progressBarDiv {
+            font-size: 3rem;
+            color: #888;
+            display: block;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="webglOutput"></canvas>
+
+    <div id="progressBarDiv">
+        Loading...
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.132.0/build/three.module.js"
+            }
+        }
+    </script>
+
+    <script type="module" src="js/08-01-model-loader.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ví dụ 02.02 - Geometry Browser</title>
+    <link rel="icon" href="../images/logo.svg" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+        canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Import maps polyfill -->
+    <!-- Remove this when import maps will be widely supported -->
+    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.137.5/build/three.module.js"
+            }
+        }
+    </script>
+
+    <script src="js/02-02-geometry-browser.js" type="module"></script>
+</body>
+</html>
